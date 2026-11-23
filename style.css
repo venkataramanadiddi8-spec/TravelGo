@@ -73,6 +73,22 @@ html{
     font-family: "Bungee Tint", system-ui;
 }
 
+.book_btn{
+    text-decoration: none;
+    background-color: #111010;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.book_btn:hover{
+   background-color: #460d90;
+   cursor: pointer;
+   transform: scale(1.05); 
+}
+
 .services{
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +161,7 @@ html{
     height: 200px;
     object-fit: cover;
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 1s;
     border-radius: 5px;
 }
 
@@ -180,6 +196,48 @@ html{
     align-items: center;
 }
 
+.booking{
+    display: none;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.booking:target{
+    display: block;
+}
+
+.booking form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input{
+    padding: 8px;
+    border: 1px solid #14af03;
+    border-radius: 10px;
+}
+
+.booking button{
+    padding: 10px;
+    background-color: #322323;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 150px;
+    align-self: center;
+}
+
+.booking button:hover{
+    transform: scale(1.05);
+    background-color: #7a103e;
+}
+
 @media only screen and (max-width:700px){
     .gallery{
         display: flex;
@@ -210,3 +268,4 @@ html{
         padding: 3px;
     }
 }
+
