@@ -200,7 +200,13 @@ html{
         margin-top: 10px;
     }
 
-    .menu_area{
-        display: none;
+    .menu_area ul{
+        gap: 5px;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .menu_area li{
+        padding: 3px;
     }
 }
